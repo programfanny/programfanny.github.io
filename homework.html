@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>[余斌斌]学习与作业</title>
   <style>
-    p{font-family:楷体 canbria;font-size:35px;color:blue;width:380px;}
-    div{border:3px solid blue;width:400px;}
+    p{font-family:楷体 canbria;font-size:20px;color:blue;width:400px;height:22px;}
+    div{border:1px solid blue;width:400px;}
     .item{color:red;font-size:30px;}
+    .red_box{border:3px dotted #f44f78;font-size:20px;}
     img{border:3px dashed yellow;}
   </style>
-
 </head>
 <body>
-  <p>在HTML中引入CSS的方法主要有四种，它们分别是行内式、内嵌式、链接式和导入式。</p>
+  <p class="red_box">在HTML中引入CSS的方法主要有四种，它们分别是行内式、内嵌式、链接式和导入式。</p>
   <p>1.行内式</p>
   <div>行内式是在标记的style属性中设定CSS样式。这种方式没有体现出CSS的优势，不推荐使用。</div>
   <p>2.内嵌式</p>
@@ -36,8 +36,8 @@
 也是将一个.css文件引入到HTML文件中，但它与导入式不同的是链接式使用HTML规则引入外部CSS文件，它在网页的&lthead&gt&lt/head&gt标签对中使用&ltlink&gt标记来引入外部样式表文件，使用语法如下：<br>
 &ltlink href="mystyle.css" rel="stylesheet" type="text/css"/&gt<br>
 使用链接式时与导入式不同的是它会以网页文件主体装载前装载CSS文件，因此显示出来的网页从一开始就是带样式的效果的，它不会象导入式那样先显示无样式的网页，然后再显示有样式的网页，这是链接式的优点。<br>
-</div>
-<p>总结：一般来说，做网站时把样式多写在多个样式表文件中，因此我们先用链接式引入一个总的CSS文件，然后在这个CSS文件中在使用导入式来引入其他的CSS文件。但如果通过JavaScrip来动态引入CSS文件则只能使用链接式。</p>
+</div><br>
+<div class="red_box">总结：一般来说，做网站时把样式多写在多个样式表文件中，因此我们先用链接式引入一个总的CSS文件，然后在这个CSS文件中在使用导入式来引入其他的CSS文件。但如果通过JavaScrip来动态引入CSS文件则只能使用链接式。</div>
 </div>
 </body>
 </html>
